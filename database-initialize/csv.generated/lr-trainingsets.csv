@@ -1,0 +1,4 @@
+trainingSetID,setName,inputWidth,outputWidth
+1,y=2x+1,1,1
+2,"XOR Gate",2,1
+3,"AND3 Gate",3,1

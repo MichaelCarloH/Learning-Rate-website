@@ -1,0 +1,25 @@
+{
+  "name": "smallneuron",
+  "version": "1.1.1",
+  "description": "Small backpropagation engine to build simple neural networks, written in Typescript.",
+  "main": "index.ts",
+  "repository": "https://github.com/YusufHosny/smallneuron.git",
+  "scripts": {
+    "test": "jest"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "graphology": "^0.25.4",
+    "graphology-dag": "^0.4.1"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.24.5",
+    "@babel/preset-env": "^7.24.5",
+    "@babel/preset-typescript": "^7.24.1",
+    "@jest/globals": "^29.7.0",
+    "@types/jest": "^29.5.12",
+    "babel-jest": "^29.7.0",
+    "jest": "^29.7.0"
+  }
+}

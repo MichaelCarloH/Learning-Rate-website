@@ -1,0 +1,33 @@
+image: node:20.5.1
+
+cache:
+  paths:
+    - /learning-rate/node_modules/
+
+test_async:
+  script:
+    - cd learning-rate
+    - npm install
+    - npx prisma generate
+    - npm run test
+
+
+deploy_preview:
+  stage: deploy
+  except:
+    - main
+  script:
+    - npm install --global vercel
+    - vercel pull --yes --environment=preview --token=$VERCEL_TOKEN
+    - vercel build --token=$VERCEL_TOKEN
+    - vercel deploy --prebuilt  --token=$VERCEL_TOKEN
+
+deploy_production:
+  stage: deploy
+  only:
+    - main
+  script:
+    - npm install --global vercel
+    - vercel pull --yes --environment=production --token=$VERCEL_TOKEN
+    - vercel build --prod --token=$VERCEL_TOKEN
+    - vercel deploy --prebuilt --prod --token=$VERCEL_TOKEN
