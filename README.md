@@ -1,6 +1,6 @@
 # Learning-Rate
 
-Learning-rate is a web development project designed to facilitate learning about neural networks through interactive lessons and a dynamic playground. The application leverages modern web technologies to provide a seamless and secure user experience.
+Learning-rate is a web development project designed to facilitate learning about neural networks through interactive lessons and a dynamic playground. The application leverages modern web technologies to provide a seamless and secure user experience. https://learning-rate-red.vercel.app/
 
 Key Features:
 - Interactive neural network playground.
