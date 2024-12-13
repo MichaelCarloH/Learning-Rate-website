@@ -73,3 +73,6 @@ Initially planned to use TensorFlow JS, but due to its complexity, a custom libr
 
 ## CI/CD
 A testing and deployment pipeline was set up using a YAML file. This file tests the project, verifies it passes all tests, and calls a deployment script to set up the server with the latest data.
+
+##
+Co developed with Yussuf Hussein, Giulio Vitolo, Jaskaran Sindhu, Adeline Anitei and Adham Almeadawy
